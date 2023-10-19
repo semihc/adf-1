@@ -18,9 +18,8 @@
 					"source": {
 						"type": "BinarySource",
 						"storeSettings": {
-							"type": "SftpReadSettings",
-							"recursive": true,
-							"disableChunking": false
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings"
