@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureFileStorageLocation",
-				"fileName": "*.pdf",
+				"fileName": "Azure Certification poster.pdf",
 				"folderPath": "src"
 			}
 		}
