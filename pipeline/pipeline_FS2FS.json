@@ -25,25 +25,11 @@
 							"type": "BinaryReadSettings"
 						}
 					},
-					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureFileStorageWriteSettings",
-							"maxConcurrentConnections": 1,
-							"copyBehavior": "PreserveHierarchy"
-						}
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "BinarySrc",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Binary_Dst",
 						"type": "DatasetReference"
 					}
 				]
