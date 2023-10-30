@@ -1,7 +1,0 @@
-{
-	"name": "Sftp1",
-	"properties": {
-		"type": "Sftp",
-		"annotations": []
-	}
-}
