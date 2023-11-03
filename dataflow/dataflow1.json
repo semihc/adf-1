@@ -18,7 +18,11 @@
 						"referenceName": "AzureBlobStorage1",
 						"type": "LinkedServiceReference"
 					},
-					"name": "sink1"
+					"name": "sink1",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureBlobStorage1",
+						"type": "LinkedServiceReference"
+					}
 				}
 			],
 			"transformations": [
@@ -48,6 +52,8 @@
 				"rank1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'json',",
+				"     container: 'test1',",
+				"     folderPath: 'JSON',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     saveOrder: 1) ~> sink1"
