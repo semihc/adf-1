@@ -8,11 +8,20 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"AzureFileStorage_Dst_connectionString": {
+			"value": ""
+		},
 		"AzureFileStorage_Src_connectionString": {
 			"value": ""
 		},
-		"AzureFileStorage_Dst_connectionString": {
+		"Sftp1_password": {
 			"value": ""
+		},
+		"Sftp1_properties_typeProperties_host": {
+			"value": "sftp.bupa.com.au"
+		},
+		"Sftp1_properties_typeProperties_userName": {
+			"value": "vendors"
 		},
 		"containerUri": {
 			"value": ""

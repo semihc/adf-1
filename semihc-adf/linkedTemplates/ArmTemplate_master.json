@@ -11,13 +11,25 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"AzureFileStorage_Dst_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureFileStorage_Dst'"
+		},
 		"AzureFileStorage_Src_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureFileStorage_Src'"
 		},
-		"AzureFileStorage_Dst_connectionString": {
+		"Sftp1_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureFileStorage_Dst'"
+			"metadata": "Secure string for 'password' of 'Sftp1'"
+		},
+		"Sftp1_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "sftp.bupa.com.au"
+		},
+		"Sftp1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "vendors"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,11 +61,20 @@
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
+					"AzureFileStorage_Dst_connectionString": {
+						"value": "[parameters('AzureFileStorage_Dst_connectionString')]"
+					},
 					"AzureFileStorage_Src_connectionString": {
 						"value": "[parameters('AzureFileStorage_Src_connectionString')]"
 					},
-					"AzureFileStorage_Dst_connectionString": {
-						"value": "[parameters('AzureFileStorage_Dst_connectionString')]"
+					"Sftp1_password": {
+						"value": "[parameters('Sftp1_password')]"
+					},
+					"Sftp1_properties_typeProperties_host": {
+						"value": "[parameters('Sftp1_properties_typeProperties_host')]"
+					},
+					"Sftp1_properties_typeProperties_userName": {
+						"value": "[parameters('Sftp1_properties_typeProperties_userName')]"
 					}
 				}
 			},
