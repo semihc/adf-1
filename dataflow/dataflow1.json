@@ -12,7 +12,15 @@
 					"name": "DataSource1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "AzureBlobStorage1",
+						"type": "LinkedServiceReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "rank1"
@@ -36,7 +44,13 @@
 				"     ignoreNoFilesFound: false) ~> DataSource1",
 				"DataSource1 rank(asc(RCV_DATE_TIME, true),",
 				"     caseInsensitive: true,",
-				"     output(RCV_DATE_TIME as long)) ~> rank1"
+				"     output(RCV_DATE_TIME as long)) ~> rank1",
+				"rank1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'json',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     saveOrder: 1) ~> sink1"
 			]
 		}
 	}
