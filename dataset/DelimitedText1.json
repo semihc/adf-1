@@ -1,0 +1,65 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export.csv",
+				"folderPath": "CSV",
+				"container": "test1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "RCV_DATE_TIME",
+				"type": "String"
+			},
+			{
+				"name": "INSTITUTION",
+				"type": "String"
+			},
+			{
+				"name": "MESSAGE_ID",
+				"type": "String"
+			},
+			{
+				"name": "REGION_ID",
+				"type": "String"
+			},
+			{
+				"name": "STATUS_ID",
+				"type": "String"
+			},
+			{
+				"name": "RET_REF_NO",
+				"type": "String"
+			},
+			{
+				"name": "PROVIDER_NO",
+				"type": "String"
+			},
+			{
+				"name": "MEMBER_NO",
+				"type": "String"
+			},
+			{
+				"name": "HCA_DATA",
+				"type": "String"
+			},
+			{
+				"name": "HCA_LOG_DAT_SEQ",
+				"type": "String"
+			}
+		]
+	}
+}
